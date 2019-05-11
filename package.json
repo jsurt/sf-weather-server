@@ -1,0 +1,15 @@
+{
+  "name": "sf-weather",
+  "version": "1.0.0",
+  "description": "An application to give the probablility of rain at the start of the SFS ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jack Surtees",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "unirest": "^0.6.0"
+  }
+}
