@@ -8,6 +8,8 @@ const unirest = require("unirest");
 
 const app = express();
 
+console.log(`CORS enabled for port ${process.env.CLIENT_ORIGIN}`);
+
 //app.use(express.static("public"));
 app.use(express.json());
 app.use(cors({ origin: process.env.CLIENT_ORIGIN }));
