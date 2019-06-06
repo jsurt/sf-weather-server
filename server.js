@@ -23,4 +23,10 @@ const showtimeWeatherRouter = require("./routers/showtime-weather-router");
 app.use("/weather", currentWeatherRouter);
 app.use("/showtime_weather", showtimeWeatherRouter);
 
+app.get("/", (req, res) => {
+  const uselessMsg =
+    "Congrats! You requested to the root! However, there really isn't much to see here. Sorry :(";
+  res.status(200).send(uselessMsg);
+});
+
 app.listen(PORT, () => console.log(`Server listening at port ${PORT}`));
